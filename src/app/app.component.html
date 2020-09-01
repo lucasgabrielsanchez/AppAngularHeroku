@@ -1,16 +1,48 @@
-<!-- <router-outlet></router-outlet> -->
+<div style="display: flex; flex-direction: column">
+  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    "
+  >
+    <div>
+      <h3>Ingrese las edades a calcular:</h3>
+    </div>
+    <div>
+      <label for="">Edad 1</label>
+    </div>
+    <div>
+      <input type="number" [(ngModel)]="edad1" />
+    </div>
+    <div>
+      <label for="">Edad 2</label>
+    </div>
+    <div>
+      <input type="number" [(ngModel)]="edad2" />
+    </div>
+    <div>
+      <button (click)="calcular()">Calcular</button>
 
-<h3>Ingrese las edades a calcular:</h3>
-<label for="">Edad 1</label>
-<input type="number" [(ngModel)]="edad1" />
-<label for="">Edad 2</label>
-<input type="number" [(ngModel)]="edad2" />
+      <button (click)="borrar()">Borrar</button>
+    </div>
+  </div>
 
-<button (click)="calcular()">Calcular</button>
-<button (click)="borrar()">Borrar</button>
+  <div style="display: flex; flex-direction: column">
+    <div>
+      <label for="">Resultado de la Suma:</label>
+    </div>
+    <div>
+      <input type="number" [(ngModel)]="resultadoSuma" />
+    </div>
+    <div>
+      <label for="">Resultado del promedio:</label>
+    </div>
+    <div>
+      <input type="number" [(ngModel)]="resultadoPromedio" />
+    </div>
+  </div>
+</div>
 
-<br /><br /><br /><br />
-<label for="">Resultado de la Suma</label>
-<input type="number" [(ngModel)]="resultadoSuma" />
-<label for="">Resultado del promedio:</label>
-<input type="number" [(ngModel)]="resultadoPromedio" />
+<router-outlet></router-outlet>
