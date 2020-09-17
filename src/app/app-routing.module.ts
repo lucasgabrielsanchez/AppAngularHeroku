@@ -4,11 +4,13 @@ import { BienvenidaComponent } from './componentes/bienvenida/bienvenida.compone
 import { LoginComponent } from './componentes/login/login.component';
 import { ErrorComponent } from './componentes/error/error.component';
 import { ClaseUnoComponent } from './componentes/clase-uno/clase-uno.component';
+import { ControlEntidadComponent } from './componentes/control-entidad/control-entidad.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
-  { path: 'bienvenida', component: BienvenidaComponent },
+  { path: 'bienvenido', component: BienvenidaComponent },
   { path: 'claseuno', component: ClaseUnoComponent },
+  { path: 'entidad/listado', component: ControlEntidadComponent },
   { path: '**', component: ErrorComponent },
 ];
 

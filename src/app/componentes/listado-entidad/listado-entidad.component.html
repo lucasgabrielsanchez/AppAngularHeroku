@@ -1,0 +1,28 @@
+<h1>Listado de Personas</h1>
+<table class="table mat-elevation-z8">
+  <thead>
+    <tr>
+      <th>Sexo</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Acción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of listadoInput">
+      <td>{{ persona.Sexo }}</td>
+      <td>{{ persona.Nombre }}</td>
+      <td>{{ persona.Apellido }}</td>
+      <td
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-content: center;
+        "
+      >
+        <button mat-mini-fab color="primary">Ver</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

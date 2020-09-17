@@ -12,6 +12,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { ClaseUnoComponent } from './componentes/clase-uno/clase-uno.component';
+import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-entidad.component';
+import { ControlEntidadComponent } from './componentes/control-entidad/control-entidad.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,8 @@ import { ClaseUnoComponent } from './componentes/clase-uno/clase-uno.component';
     BienvenidaComponent,
     ErrorComponent,
     ClaseUnoComponent,
+    ListadoEntidadComponent,
+    ControlEntidadComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +34,7 @@ import { ClaseUnoComponent } from './componentes/clase-uno/clase-uno.component';
     MatCardModule,
     MatButtonModule,
     MatInputModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

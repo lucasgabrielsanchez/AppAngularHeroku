@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
         this.usuario.nombre === 'user_prueba' &&
         this.usuario.clave === '55558888'
       ) {
-        this.router.navigate(['bienvenida']);
+        this.router.navigate(['bienvenido']);
       } else {
         this.router.navigate(['error']);
       }
