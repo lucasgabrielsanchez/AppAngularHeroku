@@ -1,5 +1,5 @@
 <h1>Listado de Personas</h1>
-<table class="table mat-elevation-z8">
+<table class="table mat-elevation-z8" style="width: 100%">
   <thead>
     <tr>
       <th>Sexo</th>
@@ -21,7 +21,9 @@
           align-content: center;
         "
       >
-        <button mat-mini-fab color="primary">Ver</button>
+        <button mat-mini-fab color="primary" (click)="emitirEntidad(persona)">
+          Ver
+        </button>
       </td>
     </tr>
   </tbody>

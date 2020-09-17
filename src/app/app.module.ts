@@ -15,6 +15,7 @@ import { ClaseUnoComponent } from './componentes/clase-uno/clase-uno.component';
 import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-entidad.component';
 import { ControlEntidadComponent } from './componentes/control-entidad/control-entidad.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-entidad.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     ClaseUnoComponent,
     ListadoEntidadComponent,
     ControlEntidadComponent,
+    DetalleEntidadComponent,
   ],
   imports: [
     BrowserModule,

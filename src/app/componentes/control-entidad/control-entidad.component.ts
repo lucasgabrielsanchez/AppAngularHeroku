@@ -8,6 +8,7 @@ import { EntidadesService } from '../../servicios/entidades.service';
 })
 export class ControlEntidadComponent implements OnInit {
   listadoEntidad: [];
+  entidadSeleccionada: any;
 
   constructor(private _entidadesService: EntidadesService) {}
 
@@ -15,5 +16,9 @@ export class ControlEntidadComponent implements OnInit {
     this._entidadesService.obtenerEntidades().subscribe((resultado) => {
       this.listadoEntidad = resultado;
     });
+  }
+
+  manejarEntidadElegida(entidad: any) {
+    this.entidadSeleccionada = entidad;
   }
 }

@@ -1,1 +1,14 @@
-<app-listado-entidad [listadoInput]="listadoEntidad"></app-listado-entidad>
+<div style="display: flex; flex-direction: row">
+  <div style="width: 40%">
+    <app-listado-entidad
+      [listadoInput]="listadoEntidad"
+      (entidadElegida)="manejarEntidadElegida($event)"
+    ></app-listado-entidad>
+  </div>
+  <div style="width: 40%; margin-top: 50px; margin-left: 20px">
+    <app-detalle-entidad
+      *ngIf="entidadSeleccionada"
+      [entidadInput]="entidadSeleccionada"
+    ></app-detalle-entidad>
+  </div>
+</div>

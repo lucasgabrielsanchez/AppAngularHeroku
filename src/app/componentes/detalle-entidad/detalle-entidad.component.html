@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Nombre: {{ entidadInput.Nombre }}</mat-card-title>
+    <mat-card-subtitle>Apellido: {{ entidadInput.Apellido }}</mat-card-subtitle>
+  </mat-card-header>
+  <div style="display: flex; align-items: center; flex-direction: column">
+    <img
+      mat-card-image
+      src="{{ entidadInput.FotoPerfil }}"
+      style="max-width: 500px; max-height: 500px"
+    />
+  </div>
+  <mat-card-content>
+    <p>Sexo : {{ entidadInput.Sexo }}</p>
+    <p>Email : {{ entidadInput.email }}</p>
+    <p>Fecha de Nacimiento : {{ entidadInput.FechaNac }}</p>
+  </mat-card-content>
+</mat-card>
