@@ -1,6 +1,5 @@
 <mat-card>
   <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>Nombre: {{ entidadInput.Nombre }}</mat-card-title>
     <mat-card-subtitle>Apellido: {{ entidadInput.Apellido }}</mat-card-subtitle>
   </mat-card-header>
@@ -12,8 +11,25 @@
     />
   </div>
   <mat-card-content>
-    <p>Sexo : {{ entidadInput.Sexo }}</p>
-    <p>Email : {{ entidadInput.email }}</p>
-    <p>Fecha de Nacimiento : {{ entidadInput.FechaNac }}</p>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      "
+    >
+      <div>
+        <p>Sexo : {{ entidadInput.Sexo }}</p>
+        <p>Email : {{ entidadInput.email }}</p>
+        <p>Fecha de Nacimiento : {{ entidadInput.FechaNac }}</p>
+      </div>
+      <div>
+        <app-boton-entidad
+          [botonEntidadInput]="entidadInput"
+          (entidadEliminar)="reEmitirEntidadEliminar($event)"
+        ></app-boton-entidad>
+      </div>
+    </div>
   </mat-card-content>
 </mat-card>

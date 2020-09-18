@@ -17,8 +17,6 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   login() {
-    console.log(this.usuario);
-
     if (this.usuario.nombre && this.usuario.clave) {
       if (
         this.usuario.nombre === 'user_prueba' &&
